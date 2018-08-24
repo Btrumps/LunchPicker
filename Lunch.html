@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Lunch</title>
+    <script language="javascript" type="text/javascript" src="Lunch.js"></script>
+
+    <style>
+        .visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .result 
+        {
+            margin-left:30px;
+            font-size:100px;
+            transition: opacity 7s;
+            transition-timing-function: ease-in;
+            color:Green;
+        }
+    </style>
+</head>
+<body onload="init();">
+    
+    <table><tr>
+    <td>
+        <table border="1" id="placeList">
+        <tr><th>Probability</th><th>Weight</th><th>Name</th><th>Pick/Ban</th></tr>
+        </table>
+        <br>
+        <button onclick="javascript:pickThePlace();">PICK THE PLACE</div>
+
+    </td>
+    <td>
+        <div id="result" class="result  hidden"></div>
+    </td>
+    </tr></table>
+</body>
+</html>
